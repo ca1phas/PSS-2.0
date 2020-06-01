@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/table.css" />
+    <link rel="stylesheet" href="../CSS/return.css" />
+    <link
+      rel="icon"
+      href="../Icons/General/220px-Smk_seri_kembangan_emblem.jpg.png"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JavaScript/app.js"></script>
+    <script src="../JavaScript/home.js"></script>
+    <script src="../JavaScript/overlay.js"></script>
+    <script src="../JavaScript/return.js"></script>
+    <title>PSS</title>
+  </head>
+  <body>
+    <main>
+      <nav class="nav" id="login">
+        <a href="home.html"><p class="nav-logo">PUSAT SUMBER</p></a>
+        <div class="nav-con">
+          <ul class="nav-links-con">
+            <li>
+              <a class="nav-links" href="borrow.html">Borrow</a>
+            </li>
+            <li>
+              <a class="nav-links active-link" href="return.html">Return</a>
+            </li>
+            <li>
+              <a class="nav-links" href="#">Bilik Tayang</a>
+            </li>
+            <li>
+              <a class="nav-links" href="duty-major.html">Duty</a>
+            </li>
+          </ul>
+          <a class="nav-user-con" href="userprofile.html">
+            <img src="../Icons/General/user.svg" alt="user" />
+          </a>
+        </div>
+      </nav>
+      <div class="main-con">
+        <div class="table-con">
+          <div class="table-top">
+            <div class="filter-con">
+              <button type="button">
+                <img src="../Icons/return/filter.svg" alt="" />
+              </button>
+            </div>
+            <div class="sort-con">
+              <button type="button">
+                <img src="../Icons/return/sort.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="table-main">
+            <div class="table-row table-heading">
+              <div class="table-column status-column">
+                <p>Status</p>
+              </div>
+              <div class="table-column category-column">
+                <p>Category</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Item Name</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>Quantity</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>Venue</p>
+              </div>
+              <div class="table-column id-column">
+                <p>ID</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>PSS</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>Borrow Date</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p>Return Date</p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p>Return Quantity</p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p>Return PSS</p>
+              </div>
+              <div class="table-column details-column">
+                <p>Details</p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>Lecture</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Sabah & Sarawak</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>2</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>2D3</p>
+              </div>
+              <div class="table-column id-column">
+                <p>5</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>15</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-01-01</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p></p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p></p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p></p>
+              </div>
+              <div class="table-column details-column">
+                <p>Labelled</p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>Lecture</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Peninsular Malaysia</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>3L4</p>
+              </div>
+              <div class="table-column id-column">
+                <p>77</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>99</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-03-04</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p>2020-04-04</p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p>88</p>
+              </div>
+              <div class="table-column details-column">
+                <p>No Labelled</p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>ICT</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Extension Wire</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>Auditorium</p>
+              </div>
+              <div class="table-column id-column">
+                <p>54</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>54</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-01-19</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p>2020-01-20</p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p>72</p>
+              </div>
+              <div class="table-column details-column">
+                <p></p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>Lecture</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>XXX 035.8 GAG</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>45</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>4RC</p>
+              </div>
+              <div class="table-column id-column">
+                <p>66</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>67</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-02-28</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p>2020-03-01</p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p>42</p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p>88</p>
+              </div>
+              <div class="table-column details-column">
+                <p>Form 5</p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>ICT</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Wireless Mic</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>2</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>Dewan</p>
+              </div>
+              <div class="table-column id-column">
+                <p>45</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>45</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-04-17</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p>2020-04-23</p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p>78</p>
+              </div>
+              <div class="table-column details-column">
+                <p></p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>Lecture</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Glob 3</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>1M1</p>
+              </div>
+              <div class="table-column id-column">
+                <p>89</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>102</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-01-31</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p></p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p></p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p></p>
+              </div>
+              <div class="table-column details-column">
+                <p></p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>Lecture</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Calculator</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>100</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>5SC2</p>
+              </div>
+              <div class="table-column id-column">
+                <p>52</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>25</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-03-04</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p>2020-04-04</p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p>90</p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p>59</p>
+              </div>
+              <div class="table-column details-column">
+                <p></p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>ICT</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>Scanner</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>1</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>Lab 2</p>
+              </div>
+              <div class="table-column id-column">
+                <p>2</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>9</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-04-19</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p></p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p></p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p></p>
+              </div>
+              <div class="table-column details-column">
+                <p></p>
+              </div>
+            </div>
+            <div class="table-row table-data">
+              <div class="table-column status-column"></div>
+              <div class="table-column category-column">
+                <p>Lecture</p>
+              </div>
+              <div class="table-column item-name-column">
+                <p>ABC 888.8 CDE</p>
+              </div>
+              <div class="table-column quantity-column">
+                <p>80</p>
+              </div>
+              <div class="table-column venue-column">
+                <p>Lab 2</p>
+              </div>
+              <div class="table-column id-column">
+                <p>50</p>
+              </div>
+              <div class="table-column pss-column">
+                <p>140</p>
+              </div>
+              <div class="table-column borrow-date-column">
+                <p>2020-05-04</p>
+              </div>
+              <div class="table-column return-date-column">
+                <p></p>
+              </div>
+              <div class="table-column return-quantity-column">
+                <p></p>
+              </div>
+              <div class="table-column return-pss-column">
+                <p></p>
+              </div>
+              <div class="table-column details-column">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="table-bottom">
+            <div class="pagination">
+              <div class="pagination-indicator">
+                <p class="pagination-current">1</p>
+                <p class="pagination-total">&nbsp/&nbsp10</p>
+              </div>
+              <button type="button">
+                <img src="../Icons/return/up.svg" alt="" />
+              </button>
+              <button type="button">
+                <img src="../Icons/return/down.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-con">
+          <a class="footer-link" href="#">C</a>
+          <a
+            id="facebook"
+            href="https://www.facebook.com/SMKSKPSS"
+            target="_blank"
+          >
+            <img src="../Icons/General/facebook.svg" alt="Facebook SMKSKPSS" />
+          </a>
+          <a class="footer-link" href="#">?</a>
+        </div>
+      </footer>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <p>&copy; Copyright 2020, PSS SMK Seri Kembangan</p>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <div
+      class="filter-overlay"
+      data-page="return filter"
+      data-typePage="return"
+    >
+      <form class="filter-form" action="#" method="post">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="left-con">
+            <div class="left-upper-con">
+              <label>Status</label>
+              <div class="input-btn-grp">
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Returned"
+                      required
+                      data-item="sucess"
+                    />
+                    <img src="../Icons/return/sucess.svg" class="btn-icon" />
+                    <p>Returned</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Expired"
+                      required
+                      data-item="warning"
+                    />
+                    <img src="../Icons/return/warning.svg" class="btn-icon" />
+                    <p>Expired</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Missing"
+                      required
+                      data-item="error"
+                    />
+                    <img src="../Icons/return/error.svg" class="btn-icon" />
+                    <p>Missing</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="left-lower-con">
+              <label>Category</label>
+              <div class="input-btn-grp">
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Lecture"
+                      required
+                      data-item="lecture"
+                    />
+                    <img src="../Icons/return/lecture.svg" class="btn-icon" />
+                    <p>Lecture</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="ICT"
+                      required
+                      data-item="ict"
+                    />
+                    <img src="../Icons/return/ict.svg" class="btn-icon" />
+                    <p>ICT</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-con">
+            <div class="right-upper-con">
+              <div class="right-upper-left-con">
+                <div>
+                  <label>Item Name</label>
+                  <input type="text" value="" />
+                </div>
+                <div>
+                  <label>Venue</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="right-upper-right-con">
+                <div>
+                  <label>Quantity</label>
+                  <input type="number" value="" />
+                </div>
+                <div>
+                  <label>Return Quantity</label>
+                  <input type="number" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="right-lower-con">
+              <div class="right-lower-left-con">
+                <div>
+                  <label>Borrow Date</label>
+                  <div class="date-input">
+                    <select id="borrow-date-month-select">
+                      <option value="Mon">Mon</option>
+                      <option value="Jan">Jan</option>
+                      <option value="Feb">Feb</option>
+                      <option value="Mar">Mar</option>
+                      <option value="Apr">Apr</option>
+                      <option value="May">May</option>
+                      <option value="Jun">Jun</option>
+                      <option value="Jul">Jul</option>
+                      <option value="Aug">Aug</option>
+                      <option value="Sep">Sep</option>
+                      <option value="Oct">Oct</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dec">Dec</option>
+                    </select>
+                    <input type="number" placeholder="Day" />
+                    <input type="number" placeholder="Year" />
+                  </div>
+                </div>
+                <div>
+                  <label>Return Date</label>
+                  <div class="date-input">
+                    <select id="return-date-month-select">
+                      <option value="Mon">Mon</option>
+                      <option value="Jan">Jan</option>
+                      <option value="Feb">Feb</option>
+                      <option value="Mar">Mar</option>
+                      <option value="Apr">Apr</option>
+                      <option value="May">May</option>
+                      <option value="Jun">Jun</option>
+                      <option value="Jul">Jul</option>
+                      <option value="Aug">Aug</option>
+                      <option value="Sep">Sep</option>
+                      <option value="Oct">Oct</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dec">Dec</option>
+                    </select>
+                    <input type="number" placeholder="Day" />
+                    <input type="number" placeholder="Year" />
+                  </div>
+                </div>
+              </div>
+              <div class="right-lower-right-con">
+                <div>
+                  <label>PSS</label>
+                  <input type="number" />
+                </div>
+                <div>
+                  <label>Return PSS</label>
+                  <input type="number" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Apply</button>
+      </form>
+    </div>
+    <div class="sort-overlay" data-page="return sort" data-typePage="return">
+      <form class="sort-form" action="#" method="post">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="sort-input-con">
+          <div class="sort-left-con">
+            <p>Sort By</p>
+            <div class="sort-left-content-con">
+              <div class="sort-left-first">
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Category"
+                      required
+                      data-item="category"
+                    />
+                    <p>Category</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Expired"
+                      required
+                      data-item="item name"
+                    />
+                    <p>Item Name</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input type="checkbox" value="id" required data-item="id" />
+                    <p>ID</p>
+                  </label>
+                </div>
+              </div>
+              <div class="sort-left-second">
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="PSS"
+                      required
+                      data-item="pss"
+                    />
+                    <p>PSS</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Quantity"
+                      required
+                      data-item="quantity"
+                    />
+                    <p>Quantity</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Borrow Date"
+                      required
+                      data-item="borrowDate"
+                    />
+                    <p>Borrow Date</p>
+                  </label>
+                </div>
+              </div>
+              <div class="sort-left-last">
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Return PSS"
+                      required
+                      data-item="returnPss"
+                    />
+                    <p>Return PSS</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Return Quantity"
+                      required
+                      data-item="returnQuantity"
+                    />
+                    <p>Return Quantity</p>
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      value="Return Date"
+                      required
+                      data-item="returnDate"
+                    />
+                    <p>Return Date</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sort-right-con">
+            <div class="sort-right-content-con">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" value="Asc" required data-item="asc" />
+                  <p>ASC</p>
+                </label>
+              </div>
+              <div>
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    value="Desc"
+                    required
+                    data-item="desc"
+                  />
+                  <p>DESC</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Sort</button>
+      </form>
+    </div>
+    <div class="edit-overlay" data-page="return edit" data-typePage="return">
+      <form class="edit-form" action="#" method="post">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="edit-input-con">
+          <div class="input-con">
+            <div class="input-grp" id="qtt">
+              <input
+                class="outline-input"
+                type="number"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="qtt">Return Quantity</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div
+      class="delete-overlay"
+      data-page="return delete"
+      data-typePage="return"
+    >
+      <form class="delete-form" action="#" method="post">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="info-con">
+          <img src="../Icons/return/delete.svg" alt="" />
+          <p>Delete the record for Eternity?</p>
+        </div>
+        <div class="btn-con">
+          <a href="#">Cancel</a>
+          <button type="submit">Delete</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

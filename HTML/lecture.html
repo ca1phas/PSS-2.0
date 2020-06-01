@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/borrow.css" />
+    <link rel="stylesheet" href="../CSS/overlay.css" />
+    <link rel="stylesheet" href="../CSS/geometric.css" />
+    <link
+      rel="icon"
+      href="../Icons/General/220px-Smk_seri_kembangan_emblem.jpg.png"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JavaScript/app.js"></script>
+    <script src="../JavaScript/overlay.js"></script>
+    <script src="../JavaScript/home.js"></script>
+    <script src="../JavaScript/card.js"></script>
+    <script src="../JavaScript/borrow.js"></script>
+    <script src="../JavaScript/cardCon.js"></script>
+    <script src="../JavaScript/lecture.js"></script>
+    <title>PSS</title>
+  </head>
+  <body>
+    <main>
+      <nav class="nav" id="login">
+        <a href="home.html"><p class="nav-logo">PUSAT SUMBER</p></a>
+        <div class="nav-con">
+          <ul class="nav-links-con">
+            <li>
+              <a class="nav-links active-link" href="borrow.html">Borrow</a>
+            </li>
+            <li>
+              <a class="nav-links" href="return.html">Return</a>
+            </li>
+            <li>
+              <a class="nav-links" href="#">Bilik Tayang</a>
+            </li>
+            <li>
+              <a class="nav-links" href="duty-major.html">Duty</a>
+            </li>
+          </ul>
+          <a class="nav-user-con" href="userprofile.html">
+            <img src="../Icons/General/user.svg" alt="user" />
+          </a>
+        </div>
+      </nav>
+      <div class="main-con">
+        <div class="card-con" data-type="lecture">
+          <div class="card-grp">
+            <a class="book" href="#">
+              <div class="card card-lecture" data-card="book">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/book.svg" alt="book" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Book</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="map" href="#">
+              <div class="card card-lecture" data-card="map">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/map.svg" alt="Map" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Map</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="geoModel" href="#">
+              <div class="card card-lecture" data-card="geoModel">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/geoModel.svg" alt="Geo Model" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Geo Model</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="glob" href="#">
+              <div class="card card-lecture" data-card="glob">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/glob.svg" alt="Glob" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Glob</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-grp">
+            <a class="whiteboard" href="#">
+              <div class="card card-lecture" data-card="whiteboard">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/whiteboard.svg" alt="Whiteboard" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Whiteboard</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="geometric" href="#">
+              <div class="card card-lecture" data-card="geometric">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/geometric.svg" alt="Geometric" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Geometric</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="calculator" href="#">
+              <div class="card card-lecture" data-card="calculator">
+                <div class="card-icon-con">
+                  <img
+                    src="../Icons/lecture/calculator.svg"
+                    alt="Calculator"
+                    id="calculator-icon"
+                  />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Calculator</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="stationary" href="#">
+              <div class="card card-lecture" data-card="stationary">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/stationary.svg" alt="Stationary" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Stationary</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-grp">
+            <a class="games" href="#">
+              <div class="card card-lecture" data-card="games">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/games.svg" alt="Games" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Games</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="cds" href="#">
+              <div class="card card-lecture" data-card="cds">
+                <div class="card-icon-con">
+                  <img src="../Icons/lecture/cds.svg" alt="CDs" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">CDs</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="others" href="#" data-card="others">
+              <div class="card card-lecture">
+                <div class="card-icon-con">
+                  <img src="../Icons/General/Card/others.svg" alt="Others" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Others</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a class="custom" href="#" data-card="custom">
+              <div class="card card-lecture">
+                <div class="card-icon-con">
+                  <img src="../Icons/General/Card/custom.svg" alt="Custom" />
+                </div>
+                <div class="card-heading-con">
+                  <p class="card-heading">Custom</p>
+                  <img src="../Icons/General/arrowRight.svg" alt="arrow" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-con">
+          <a class="footer-link" href="#">C</a>
+          <a
+            id="facebook"
+            href="https://www.facebook.com/SMKSKPSS"
+            target="_blank"
+          >
+            <img src="../Icons/General/facebook.svg" alt="Facebook SMKSKPSS" />
+          </a>
+          <a class="footer-link" href="#">?</a>
+        </div>
+      </footer>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <p>&copy; Copyright 2020, PSS SMK Seri Kembangan</p>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <div
+      class="overlay-con book-overlay"
+      data-page="borrow lecture book"
+      data-typePage="lecture"
+    >
+      <form class="book-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="np">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label">No Panggilan</label>
+          </div>
+          <div class="input-grp" id="form">
+            <select class="outline-select" id="form-select" required>
+              <option value="Form">Form</option>
+              <option value="Remove">Remove</option>
+              <option value="Form 1">Form 1</option>
+              <option value="Form 2">Form 2</option>
+              <option value="Form 3">Form 3</option>
+              <option value="Form 4">Form 4</option>
+              <option value="Form 5">Form 5</option>
+              <option value="No Form">No Form</option>
+            </select>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con map-overlay"
+      data-page="borrow lecture map select"
+      data-typePage="lecture"
+    >
+      <form class="map-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="map">
+            <select class="outline-select" id="map-select" required>
+              <option value="Choose the Map">Choose the Map</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Peninsular Malaysia">Peninsular Malaysia</option>
+              <option value="Sabah & Sarawak">Sabah & Sarawak</option>
+              <option value="Southeast Asia">Southeast Asia</option>
+            </select>
+          </div>
+          <div class="input-sec">
+            <div class="input-grp" id="qtt">
+              <input
+                class="outline-input-sm"
+                type="number"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="qtt">Quantity</label>
+            </div>
+            <div class="input-grp">
+              <label class="checkbox">
+                <input type="checkbox" value="Labelled" required />
+                <span class="checkmark"
+                  ><div>
+                    <img src="../Icons/General/Form/check.svg" alt="" /></div
+                ></span>
+                <p>Labelled</p>
+              </label>
+            </div>
+          </div>
+          <div class="input-sec">
+            <div class="input-grp" id="venue" data-page="lec">
+              <input
+                class="outline-input-sm"
+                type="text"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="venue">Venue</label>
+              <div class="input-icon">
+                <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+              </div>
+            </div>
+            <div class="input-grp" id="id" data-page="lec">
+              <input
+                class="outline-input-sm"
+                type="number"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="id">ID</label>
+              <div class="input-icon">
+                <img src="../Icons/General/Form/id.svg" alt="ID" />
+              </div>
+            </div>
+          </div>
+          <input
+            class="btn lecture-btn"
+            id="map-btn"
+            type="submit"
+            value="SUBMIT"
+          />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con geoModel-overlay"
+      data-page="borrow lecture geo select"
+      data-typePage="lecture"
+    >
+      <form class="geo-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="geoModel">
+            <select class="outline-select" id="geo-select" required>
+              <option value="Geo Model">Geo Model</option>
+              <option value="Gunung Lipatan">Gunung Lipatan</option>
+              <option value="Gunung Bongkah">Gunung Bongkah</option>
+              <option value="Gunung Berapi">Gunung Berapi</option>
+            </select>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con glob-overlay"
+      data-page="borrow lecture glob select"
+      data-typePage="lecture"
+    >
+      <form class="glob-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="glob">
+            <select class="outline-select" id="glob-select" required>
+              <option value="Glob">Glob</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con whiteboard-overlay"
+      data-page="borrow lecture whiteboard item"
+      data-pageType="whiteboard"
+      data-typePage="lecture"
+    >
+      <form class="whiteboard-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-sec item-sec" id="fir-item">
+            <div class="input-grp item-grp" id="whiteboard-lg-button">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input type="checkbox" value="Large Whiteboard" />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/whiteboard/whiteboard-lg.svg"
+                      alt=""
+                      data-item="whiteboard-lg"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="input-grp item-qtt" id="whiteboard-lg-qtt">
+              <input
+                class="outline-input-xs"
+                type="number"
+                placeholder="0"
+                disabled="true"
+                autocomplete="off"
+                required
+              />
+              <div class="qtt-indicator">
+                <div class="up">
+                  <img src="../Icons/General/Form/up.svg" alt="" />
+                </div>
+                <div class="down">
+                  <img src="../Icons/General/Form/down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-sec item-sec" id="sec-item">
+            <div class="input-grp item-grp" id="whiteboard-button">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input type="checkbox" value="Mini Whiteboard" />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/whiteboard/whiteboard.svg"
+                      alt=""
+                      data-item="whiteboard"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="input-grp item-qtt" id="whiteboard-qtt">
+              <input
+                class="outline-input-xs"
+                type="number"
+                placeholder="0"
+                disabled="true"
+                autocomplete="off"
+                required
+              />
+              <div class="qtt-indicator">
+                <div class="up">
+                  <img src="../Icons/General/Form/up.svg" alt="" />
+                </div>
+                <div class="down">
+                  <img src="../Icons/General/Form/down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-sec item-sec" id="thi-item">
+            <div class="input-grp item-grp" id="marker-button">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input type="checkbox" value="Markerpen" />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/whiteboard/marker.svg"
+                      alt=""
+                      data-item="marker"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="input-grp item-qtt" id="marker-qtt">
+              <input
+                class="outline-input-xs"
+                type="number"
+                placeholder="0"
+                disabled="true"
+                autocomplete="off"
+                required
+              />
+              <div class="qtt-indicator">
+                <div class="up">
+                  <img src="../Icons/General/Form/up.svg" alt="" />
+                </div>
+                <div class="down">
+                  <img src="../Icons/General/Form/down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-sec item-sec" id="fou-item">
+            <div class="input-grp item-grp" id="duster-button">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input type="checkbox" value="Duster" />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/whiteboard/duster.svg"
+                      alt=""
+                      data-item="duster"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="input-grp item-qtt" id="duster-qtt">
+              <input
+                class="outline-input-xs"
+                type="number"
+                placeholder="0"
+                disabled="true"
+                autocomplete="off"
+                required
+              />
+              <div class="qtt-indicator">
+                <div class="up">
+                  <img src="../Icons/General/Form/up.svg" alt="" />
+                </div>
+                <div class="down">
+                  <img src="../Icons/General/Form/down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con geometric-overlay"
+      data-page="borrow lecture metricGeo"
+      data-typePage="lecture"
+      id="geometric-con"
+    >
+      <form class="geometric-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="item-row">
+            <p>Base</p>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Circle"
+                    data-geometric="circle"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/circle.svg"
+                      alt=""
+                      data-item="circle"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Triangle"
+                    data-geometric="triangle"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/triangle.svg"
+                      alt=""
+                      data-item="triangle"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Square"
+                    data-geometric="square"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/square.svg"
+                      alt=""
+                      data-item="square"
+                      id="square-icon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Rectangle"
+                    data-geometric="rectangle"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/rectangle.svg"
+                      alt=""
+                      data-item="rectangle"
+                      id="rectangle-icon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Pentagon"
+                    data-geometric="pentagon"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/pentagon.svg"
+                      alt=""
+                      data-item="pentagon"
+                      id="pentagon-icon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="hexagon"
+                    data-geometric="hexagon"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/hexagon.svg"
+                      alt=""
+                      data-item="hexagon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="heptagon"
+                    data-geometric="heptagon"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/heptagon.svg"
+                      alt=""
+                      data-item="heptagon"
+                      id="heptagon-icon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="octagon"
+                    data-geometric="octagon"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/octagon.svg"
+                      alt=""
+                      data-item="octagon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="item-row">
+            <p>Top</p>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Circle"
+                    data-geometric="circle"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/circle.svg"
+                      alt=""
+                      data-item="circle"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Triangle"
+                    data-geometric="triangle"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/triangle.svg"
+                      alt=""
+                      data-item="triangle"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Square"
+                    data-geometric="square"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/square.svg"
+                      alt=""
+                      data-item="square"
+                      id="square-icon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input
+                    type="checkbox"
+                    value="Rectangle"
+                    data-geometric="rectangle"
+                  />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/geometric/rectangle.svg"
+                      alt=""
+                      data-item="rectangle"
+                      id="rectangle-icon"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="input-sec">
+            <div class="input-grp" id="venue" data-page="lec">
+              <input
+                class="outline-input-sm"
+                type="text"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="venue">Venue</label>
+              <div class="input-icon">
+                <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+              </div>
+            </div>
+            <div class="input-grp" id="id" data-page="lec">
+              <input
+                class="outline-input-sm"
+                type="number"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="id">ID</label>
+              <div class="input-icon">
+                <img src="../Icons/General/Form/id.svg" alt="ID" />
+              </div>
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con calculator-overlay"
+      data-page="borrow lecture calculator item"
+      data-pageType="calculator"
+      data-typePage="lecture"
+    >
+      <form class="calculator-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-sec item-sec" id="fir-item">
+            <div class="input-grp item-grp" id="calculator-button">
+              <div class="input-btn-con">
+                <label class="item-btn">
+                  <input type="checkbox" value="Calculator" />
+                  <span class="item-img">
+                    <img
+                      src="../Icons/lecture/calculator.svg"
+                      alt=""
+                      data-item="calculator"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="input-grp item-qtt" id="calculator-qtt">
+              <input
+                class="outline-input-xs"
+                type="number"
+                placeholder="0"
+                disabled="true"
+                autocomplete="off"
+                required
+              />
+              <div class="qtt-indicator">
+                <div class="up">
+                  <img src="../Icons/General/Form/up.svg" alt="" />
+                </div>
+                <div class="down">
+                  <img src="../Icons/General/Form/down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con stationary-overlay"
+      data-page="borrow lecture stationary item"
+      data-pageType="stationary"
+      data-typePage="lecture"
+    >
+      <form class="stationary-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="item-con">
+            <div class="input-sec item-sec-con">
+              <div class="item-sec-row item-sec">
+                <div class="input-grp item-grp" id="marker-button">
+                  <div class="input-btn-con">
+                    <label class="item-btn">
+                      <input type="checkbox" value="Marker Pen" />
+                      <span class="item-img">
+                        <img
+                          src="../Icons/lecture/stationary/marker.svg"
+                          alt=""
+                          data-item="marker"
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-grp item-qtt" id="marker-qtt">
+                  <input
+                    class="outline-input-xs"
+                    type="number"
+                    placeholder="0"
+                    disabled="true"
+                    autocomplete="off"
+                    required
+                  />
+                  <div class="qtt-indicator">
+                    <div class="up">
+                      <img src="../Icons/General/Form/up.svg" alt="" />
+                    </div>
+                    <div class="down">
+                      <img src="../Icons/General/Form/down.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-sec-row item-sec">
+                <div class="input-grp item-grp" id="ruler-button">
+                  <div class="input-btn-con">
+                    <label class="item-btn">
+                      <input type="checkbox" value="Ruler" />
+                      <span class="item-img">
+                        <img
+                          src="../Icons/lecture/stationary/ruler.svg"
+                          alt=""
+                          data-item="ruler"
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-grp item-qtt" id="ruler-qtt">
+                  <input
+                    class="outline-input-xs"
+                    type="number"
+                    placeholder="0"
+                    disabled="true"
+                    autocomplete="off"
+                    required
+                  />
+                  <div class="qtt-indicator">
+                    <div class="up">
+                      <img src="../Icons/General/Form/up.svg" alt="" />
+                    </div>
+                    <div class="down">
+                      <img src="../Icons/General/Form/down.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-sec-row item-sec">
+                <div class="input-grp item-grp" id="measuring-tape-button">
+                  <div class="input-btn-con">
+                    <label class="item-btn">
+                      <input type="checkbox" value="Measuring Tape" />
+                      <span class="item-img">
+                        <img
+                          src="../Icons/lecture/stationary/measuring-tape.svg"
+                          alt=""
+                          data-item="measuring-tape"
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-grp item-qtt" id="measuring-tape-qtt">
+                  <input
+                    class="outline-input-xs"
+                    type="number"
+                    placeholder="0"
+                    disabled="true"
+                    autocomplete="off"
+                    required
+                  />
+                  <div class="qtt-indicator">
+                    <div class="up">
+                      <img src="../Icons/General/Form/up.svg" alt="" />
+                    </div>
+                    <div class="down">
+                      <img src="../Icons/General/Form/down.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-sec item-sec-con">
+              <div class="item-sec-row item-sec">
+                <div class="input-grp item-grp" id="compass-button">
+                  <div class="input-btn-con">
+                    <label class="item-btn">
+                      <input type="checkbox" value="Compass" />
+                      <span class="item-img">
+                        <img
+                          src="../Icons/lecture/stationary/compass.svg"
+                          alt=""
+                          data-item="compass"
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-grp item-qtt" id="compass-qtt">
+                  <input
+                    class="outline-input-xs"
+                    type="number"
+                    placeholder="0"
+                    disabled="true"
+                    autocomplete="off"
+                    required
+                  />
+                  <div class="qtt-indicator">
+                    <div class="up">
+                      <img src="../Icons/General/Form/up.svg" alt="" />
+                    </div>
+                    <div class="down">
+                      <img src="../Icons/General/Form/down.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-sec-row item-sec">
+                <div class="input-grp item-grp" id="setsquare-ruler-button">
+                  <div class="input-btn-con">
+                    <label class="item-btn">
+                      <input type="checkbox" value="Setsquare Ruler" />
+                      <span class="item-img">
+                        <img
+                          src="../Icons/lecture/stationary/setsquare-ruler.svg"
+                          alt=""
+                          data-item="setsquare-ruler"
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-grp item-qtt" id="setsquare-ruler-qtt">
+                  <input
+                    class="outline-input-xs"
+                    type="number"
+                    placeholder="0"
+                    disabled="true"
+                    autocomplete="off"
+                    required
+                  />
+                  <div class="qtt-indicator">
+                    <div class="up">
+                      <img src="../Icons/General/Form/up.svg" alt="" />
+                    </div>
+                    <div class="down">
+                      <img src="../Icons/General/Form/down.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-sec-row item-sec">
+                <div class="input-grp item-grp" id="protractor-button">
+                  <div class="input-btn-con">
+                    <label class="item-btn">
+                      <input type="checkbox" value="Protractor" />
+                      <span class="item-img">
+                        <img
+                          src="../Icons/lecture/stationary/protractor.svg"
+                          alt=""
+                          data-item="protractor"
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-grp item-qtt" id="protractor-qtt">
+                  <input
+                    class="outline-input-xs"
+                    type="number"
+                    placeholder="0"
+                    disabled="true"
+                    autocomplete="off"
+                    required
+                  />
+                  <div class="qtt-indicator">
+                    <div class="up">
+                      <img src="../Icons/General/Form/up.svg" alt="" />
+                    </div>
+                    <div class="down">
+                      <img src="../Icons/General/Form/down.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-sec">
+            <div class="input-grp" id="venue" data-page="lec">
+              <input
+                class="outline-input"
+                type="text"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="venue">Venue</label>
+              <div class="input-icon">
+                <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+              </div>
+            </div>
+            <div class="input-grp" id="id" data-page="lec">
+              <input
+                class="outline-input"
+                type="number"
+                autocomplete="off"
+                required
+              />
+              <label class="input-label" for="id">ID</label>
+              <div class="input-icon">
+                <img src="../Icons/General/Form/id.svg" alt="ID" />
+              </div>
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con games-overlay"
+      data-page="borrow lecture games select"
+      data-typePage="lecture"
+    >
+      <form class="games-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="games">
+            <select class="outline-select" id="games-select" required>
+              <option value="Games">Games</option>
+              <option value="Congkak">Congkak</option>
+              <option value="Chess">Chess</option>
+              <option value="Sudoku">Sudoku</option>
+              <option value="Sahibba">Sahibba</option>
+              <option value="Math Magic">Math Magic</option>
+              <option value="IQ Puzzle">IQ Puzzle</option>
+              <option value="Permainan Dam">Permainan Dam</option>
+              <option value="Mind Challenge">Mind Challenge</option>
+              <option value="Ramagon">Ramagon</option>
+              <option value="Snake Chess">Snake Chess</option>
+            </select>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con cds-overlay"
+      data-page="borrow lecture cds select"
+      data-typePage="lecture"
+    >
+      <form class="cds-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="cds">
+            <select class="outline-select" id="cds-select" required>
+              <option value="CDs">CDs</option>
+              <option value="No">No</option>
+              <option value="Idea">Idea</option>
+              <option value="What">What</option>
+            </select>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con others-overlay"
+      data-page="borrow lecture others select"
+      data-typePage="lecture"
+    >
+      <form class="others-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="cds">
+            <select class="outline-select" id="others-select" required>
+              <option value="Please Choose">Please Choose</option>
+              <option value="Thermometer">Thermometer</option>
+              <option value="Cellophane Tape">Cellophane Tape</option>
+              <option value="Compass">Compass</option>
+              <option value="Bell">Bell</option>
+            </select>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <div
+      class="overlay-con custom-overlay"
+      data-page="borrow lecture custom"
+      data-typePage="lecture"
+    >
+      <form class="custom-form form" action="#" method="POST">
+        <div class="overlay-close">
+          <button type="button" class="close-btn">
+            <img src="../Icons/General/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="input-con">
+          <div class="input-grp" id="custom">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label">Item</label>
+          </div>
+          <div class="input-grp" id="qtt">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="qtt">Quantity</label>
+          </div>
+          <div class="input-grp" id="venue" data-page="lec">
+            <input
+              class="outline-input"
+              type="text"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="venue">Venue</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/venue.svg" alt="Venue" />
+            </div>
+          </div>
+          <div class="input-grp" id="id" data-page="lec">
+            <input
+              class="outline-input"
+              type="number"
+              autocomplete="off"
+              required
+            />
+            <label class="input-label" for="id">ID</label>
+            <div class="input-icon">
+              <img src="../Icons/General/Form/id.svg" alt="ID" />
+            </div>
+          </div>
+          <input class="btn lecture-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
