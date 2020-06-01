@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+.login-btn-con {
+  position: absolute;
+  right: 0;
+  margin: 0 168px 0 0;
+}
+
+.login-btn-con .login-btn {
+  padding: 8px 32px;
+  background: #bb86fc;
+}
+
+.login-form {
+  width: 472px;
+  height: 357px;
+}
+
+.login-form .login-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: default;
+          flex-direction: default;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: default;
+      -ms-flex-align: default;
+          align-items: default;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.login-form .input-grp span {
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(8px, -1px);
+          transform: translate(8px, -1px);
+  display: none;
+  width: 32px;
+  border: 1px solid #101117;
+  border-radius: 0;
+  -webkit-transition: display 1s ease;
+  transition: display 1s ease;
+}
+
+.login-form .input-grp .login-input-label {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.login-form .input-grp input:focus + .login-input-label,
+.login-form .input-grp input:valid + .login-input-label {
+  font-size: 16px !important;
+  -webkit-transform: translate(16px, -60px) !important;
+          transform: translate(16px, -60px) !important;
+}
+
+.login-form .input-grp #pw-gap {
+  width: 88px;
+}
+
+.login-form .login-submit {
+  margin-top: 8px;
+  width: 360px;
+  height: 48px;
+  background: #bb86fc;
+}
+
+.ani-login-btn {
+  -webkit-animation: login-btn 0.5s forwards ease-out;
+          animation: login-btn 0.5s forwards ease-out;
+}
+
+@-webkit-keyframes login-btn {
+  from {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opcaity: 1;
+  }
+}
+
+@keyframes login-btn {
+  from {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opcaity: 1;
+  }
+}
+/*# sourceMappingURL=default.css.map */

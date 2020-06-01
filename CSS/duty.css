@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+.duty-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.duty-overlay .duty-form {
+  position: absolute;
+  padding: 32px 40px;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: default;
+          flex-direction: default;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 488px;
+  height: 160px;
+  background: #14151d;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.duty-overlay .duty-form .input-con {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #eee;
+}
+
+.duty-overlay .duty-form .input-con .duty-con {
+  width: 240px;
+  height: 78px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 32px 48px;
+      grid-template-rows: 32px 48px;
+}
+
+.duty-overlay .duty-form .input-con .duty-con .duty-content-con {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 120px;
+      grid-template-columns: 120px 120px;
+}
+
+.duty-overlay .duty-form .input-con .duty-con .duty-content-con div:first-child label {
+  border-radius: 8px 0 0 8px;
+}
+
+.duty-overlay .duty-form .input-con .duty-con .duty-content-con div:last-child label {
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+}
+
+.duty-overlay .duty-form .input-con .duty-con .duty-content-con div .disabled {
+  opacity: 0.5;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.duty-overlay .duty-form .input-con .duty-con .duty-content-con .checkbox {
+  position: relative;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #eee;
+  background-color: #717282;
+  border: 1px solid #444655;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.duty-overlay .duty-form .input-con .duty-con .duty-content-con .checkbox input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.duty-overlay .duty-form .overlay-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.duty-overlay .duty-form .overlay-close button {
+  border: none;
+  background: transparent;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.duty-overlay .duty-form button[type="submit"] {
+  position: absolute;
+  bottom: 48px;
+  right: 48px;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  color: #eee;
+  border: none;
+  border-radius: 8px;
+  background: #705097;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.duty-overlay .duty-form button[type="submit"]:hover {
+  color: #eee;
+  background-color: #bb86fc;
+}
+
+.overlay {
+  display: block;
+  -webkit-animation: scaleup 0.25s forwards ease-in-out;
+          animation: scaleup 0.25s forwards ease-in-out;
+}
+
+@-webkit-keyframes scaleup {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleup {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=duty.css.map */

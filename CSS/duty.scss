@@ -1,0 +1,153 @@
+@import "./import.scss";
+
+.duty-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  .duty-form {
+    position: absolute;
+    padding: $px4 $px5;
+    top: 50%;
+    left: 50%;
+
+    @include flex(default, center, center);
+    width: 488px;
+    height: 160px;
+
+    background: $bgLColor;
+
+    transform: translate(-50%, -50%);
+
+    .input-con {
+      width: 100%;
+      height: 100%;
+
+      font-family: $fontFamily;
+      font-size: $fontNormal;
+      color: $white;
+
+      .duty-con {
+        width: 240px;
+        height: 78px;
+
+        display: grid;
+        grid-template-rows: $px4 $px6;
+
+        .duty-content-con {
+          width: 100%;
+          height: 100%;
+
+          display: grid;
+          grid-template-columns: $px15 $px15;
+
+          div {
+            &:first-child {
+              label {
+                border-radius: $px1 0 0 $px1;
+              }
+            }
+
+            &:last-child {
+              label {
+                border-left: none;
+                border-radius: 0 $px1 $px1 0;
+              }
+            }
+
+            .disabled {
+              opacity: 0.5;
+              transition: 0.1s ease-in;
+            }
+          }
+
+          .checkbox {
+            position: relative;
+            padding: 0 $px1;
+
+            @include flex(row, center, center);
+            width: 120px;
+            height: 100%;
+
+            font-family: $fontFamily;
+            font-size: $fontSmall;
+            color: $white;
+            background-color: $checkboxColor;
+            border: 1px solid $priDark;
+
+            cursor: pointer;
+            user-select: none;
+
+            input {
+              position: absolute;
+              opacity: 0;
+
+              height: 0;
+              width: 0;
+
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .overlay-close {
+      position: absolute;
+      top: $px2;
+      right: $px2;
+
+      width: $px3;
+      height: $px3;
+
+      button {
+        border: none;
+        background: transparent;
+
+        pointer-events: all;
+        cursor: pointer;
+      }
+    }
+
+    button[type="submit"] {
+      position: absolute;
+      bottom: $px6;
+      right: $px6;
+
+      width: 120px;
+      height: 40px;
+      font-size: $fontNormal;
+      color: $white;
+      border: none;
+      border-radius: $px1;
+      background: $priColor2;
+
+      pointer-events: all;
+      cursor: pointer;
+
+      &:hover {
+        color: $white;
+        background-color: $priColor1;
+      }
+    }
+  }
+}
+
+.overlay {
+  display: block;
+  animation: scaleup 0.25s forwards ease-in-out;
+}
+
+@keyframes scaleup {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

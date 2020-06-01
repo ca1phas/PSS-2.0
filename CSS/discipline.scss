@@ -1,0 +1,82 @@
+@import "./import.scss";
+
+main {
+  .nav {
+    .nav-con {
+      .nav-links-con {
+        li {
+          &:last-child {
+            .active-link::after {
+              left: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#four-card-con {
+  margin: auto;
+  width: 1176px;
+  height: 280px;
+
+  .card-grp {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-column-gap: $px9;
+
+    a {
+      &:nth-child(2) {
+        .card {
+          border-top: 2px solid $secColor2;
+
+          &:hover {
+            border-top: 2px solid $secColor1;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .card {
+          border-top: 2px solid $secColor2;
+
+          &:hover {
+            border-top: 2px solid $secColor1;
+          }
+        }
+      }
+
+      &:last-child {
+        .card {
+          border-top: 2px solid $terColor3;
+
+          &:hover {
+            border-top: 2px solid $terColor1;
+          }
+        }
+      }
+    }
+
+    .card {
+      margin: 0;
+      width: 100%;
+
+      img:first-child {
+        width: 64px;
+        height: 64px;
+      }
+
+      .card-heading-con {
+        width: 85%;
+
+        .card-heading {
+          font-family: $fontFamily;
+          font-size: $fontLarge;
+        }
+      }
+    }
+  }
+}

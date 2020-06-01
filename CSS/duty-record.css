@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+.table-con {
+  width: 472px;
+  height: 624px;
+}
+
+.table-con .table-top {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.table-con .table-top .right-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #eee;
+}
+
+.table-con .table-top .right-con .ganti-con {
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.table-con .table-top .right-con .sort-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-con .table-row {
+  -ms-grid-columns: 80px 104px 56px 56px auto 64px;
+      grid-template-columns: 80px 104px 56px 56px auto 64px;
+}
+
+.sort-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.sort-overlay .sort-form {
+  position: absolute;
+  padding: 32px 40px;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: default;
+          flex-direction: default;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 344px;
+  height: 228px;
+  background: #14151d;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sort-overlay .sort-form .overlay-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.sort-overlay .sort-form .overlay-close button {
+  border: none;
+  background: transparent;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.sort-overlay .sort-form .input-con {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #eee;
+}
+
+.sort-overlay .sort-form .input-con .sort-con {
+  width: 264px;
+  height: 114px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 32px 80px;
+      grid-template-rows: 32px 80px;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 120px;
+      grid-template-columns: 120px 120px;
+  grid-column-gap: 24px;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-left,
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-right {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-left .checkbox,
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-right .checkbox {
+  position: relative;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #eee;
+  background-color: #717282;
+  border: 1px solid #444655;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-left .checkbox input,
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-right .checkbox input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-left div:first-child label,
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-right div:first-child label {
+  border-radius: 8px 8px 0 0;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-left div:last-child label,
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-right div:last-child label {
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-left div .disabled,
+.sort-overlay .sort-form .input-con .sort-con .sort-content-con .sort-right div .disabled {
+  opacity: 0.5;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.sort-overlay .sort-form button[type="submit"] {
+  position: absolute;
+  bottom: 24px;
+  right: 40px;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  color: #eee;
+  border: none;
+  border-radius: 8px;
+  background: #705097;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.sort-overlay .sort-form button[type="submit"]:hover {
+  background-color: #bb86fc;
+}
+
+.overlay {
+  display: block;
+  -webkit-animation: scaleup 0.25s forwards ease-in-out;
+          animation: scaleup 0.25s forwards ease-in-out;
+}
+
+@-webkit-keyframes scaleup {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleup {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=duty-record.css.map */

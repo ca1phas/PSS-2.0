@@ -1,0 +1,82 @@
+@import "./import";
+
+.login-btn-con {
+  position: absolute;
+  right: 0;
+  margin: 0 $px21 0 0;
+
+  .login-btn {
+    padding: $px1 $px4;
+    background: $priColor1;
+  }
+}
+
+.login-form {
+  width: 472px;
+  height: 357px;
+
+  .login-title {
+    @include flex(default, center, default);
+    width: 100%;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: $fontXLarge;
+    line-height: 1.5;
+    color: $white;
+  }
+
+  .input-grp {
+    span {
+      position: absolute;
+      z-index: 2;
+      transform: translate(8px, -1px);
+
+      display: none;
+      width: 32px;
+      @include border(1px, solid, $bgColor, 0);
+
+      transition: display 1s ease;
+    }
+
+    .login-input-label {
+      transition: all 0.2s ease-in;
+    }
+
+    input {
+      &:focus + .login-input-label,
+      &:valid + .login-input-label {
+        font-size: $fontNormal !important;
+        transform: translate(16px, -60px) !important;
+      }
+    }
+
+    #pw-gap {
+      width: 88px;
+    }
+  }
+
+  .login-submit {
+    margin-top: $px1;
+
+    width: 360px;
+    height: $px6;
+
+    background: $priColor1;
+  }
+}
+
+.ani-login-btn {
+  animation: login-btn 0.5s forwards ease-out;
+}
+
+@keyframes login-btn {
+  from {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opcaity: 1;
+  }
+}

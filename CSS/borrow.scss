@@ -1,0 +1,166 @@
+@import "./import";
+
+.card-con {
+  margin: $px4 auto;
+  width: 708px;
+  height: 592px;
+
+  .card-grp {
+    @include flex(default, default, default);
+    width: 100%;
+    height: 172px;
+
+    &:nth-child(2) {
+      margin: $px4 0;
+    }
+
+    a:nth-child(2) .card {
+      margin: 0 $px4;
+    }
+
+    a:nth-child(3) .card {
+      margin-right: $px4;
+    }
+
+    .card {
+      position: relative;
+
+      display: none;
+      width: 153px;
+      height: 100%;
+
+      background-color: $bgLColor;
+      border-top: 2px solid $priColor2;
+
+      &:hover {
+        background-color: $bgLColorHv;
+        border-top: 2px solid $priColor1;
+        animation: scaleUp 0.25s forwards ease-out;
+      }
+
+      .card-lecture {
+        border-top: 2px solid $priColor2;
+      }
+
+      .card-ict {
+        border-top: 2px solid $secColor2;
+
+        &:hover {
+          border-top: 2px solid $secColor1;
+        }
+      }
+
+      .card-icon-con {
+        position: absolute;
+        top: $px2;
+        left: $px2;
+
+        img {
+          width: $px5;
+          height: auto;
+        }
+      }
+
+      .card-heading-con {
+        position: absolute;
+        bottom: $px2;
+        left: $px2;
+
+        @include flex(row, default, center);
+
+        width: 121px;
+        height: $px3;
+
+        .card-heading {
+          font-family: "Poppins", sans-serif;
+          font-size: $fontSmall;
+          color: $secDark;
+
+          text-transform: uppercase;
+        }
+
+        img {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+
+    .card-ict {
+      border-top: 2px solid $secColor2;
+
+      &:hover {
+        border-top: 2px solid $secColor1;
+      }
+    }
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.3s forwards ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.3s forwards ease-in;
+}
+
+.fade-right {
+  animation: fadeRight 0.4s forwards ease-in;
+}
+
+.fade-left {
+  animation: fadeLeft 0.4s forwards ease-in;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.025);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(-40px) scale(0.75);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(40px) scale(0.75);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}

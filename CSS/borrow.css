@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+.card-con {
+  margin: 32px auto;
+  width: 708px;
+  height: 592px;
+}
+
+.card-con .card-grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: default;
+          flex-direction: default;
+  -webkit-box-pack: default;
+      -ms-flex-pack: default;
+          justify-content: default;
+  -webkit-box-align: default;
+      -ms-flex-align: default;
+          align-items: default;
+  width: 100%;
+  height: 172px;
+}
+
+.card-con .card-grp:nth-child(2) {
+  margin: 32px 0;
+}
+
+.card-con .card-grp a:nth-child(2) .card {
+  margin: 0 32px;
+}
+
+.card-con .card-grp a:nth-child(3) .card {
+  margin-right: 32px;
+}
+
+.card-con .card-grp .card {
+  position: relative;
+  display: none;
+  width: 153px;
+  height: 100%;
+  background-color: #14151d;
+  border-top: 2px solid #705097;
+}
+
+.card-con .card-grp .card:hover {
+  background-color: #1e1f29;
+  border-top: 2px solid #bb86fc;
+  -webkit-animation: scaleUp 0.25s forwards ease-out;
+          animation: scaleUp 0.25s forwards ease-out;
+}
+
+.card-con .card-grp .card .card-lecture {
+  border-top: 2px solid #705097;
+}
+
+.card-con .card-grp .card .card-ict {
+  border-top: 2px solid #018786;
+}
+
+.card-con .card-grp .card .card-ict:hover {
+  border-top: 2px solid #03dac5;
+}
+
+.card-con .card-grp .card .card-icon-con {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.card-con .card-grp .card .card-icon-con img {
+  width: 40px;
+  height: auto;
+}
+
+.card-con .card-grp .card .card-heading-con {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: default;
+      -ms-flex-pack: default;
+          justify-content: default;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 121px;
+  height: 24px;
+}
+
+.card-con .card-grp .card .card-heading-con .card-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #55586b;
+  text-transform: uppercase;
+}
+
+.card-con .card-grp .card .card-heading-con img {
+  position: absolute;
+  right: 0;
+}
+
+.card-con .card-grp .card-ict {
+  border-top: 2px solid #018786;
+}
+
+.card-con .card-grp .card-ict:hover {
+  border-top: 2px solid #03dac5;
+}
+
+.slide-down {
+  -webkit-animation: slideDown 0.3s forwards ease-in;
+          animation: slideDown 0.3s forwards ease-in;
+}
+
+.slide-up {
+  -webkit-animation: slideUp 0.3s forwards ease-in;
+          animation: slideUp 0.3s forwards ease-in;
+}
+
+.fade-right {
+  -webkit-animation: fadeRight 0.4s forwards ease-in;
+          animation: fadeRight 0.4s forwards ease-in;
+}
+
+.fade-left {
+  -webkit-animation: fadeLeft 0.4s forwards ease-in;
+          animation: fadeLeft 0.4s forwards ease-in;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeRight {
+  from {
+    -webkit-transform: translateX(-40px) scale(0.75);
+            transform: translateX(-40px) scale(0.75);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    -webkit-transform: translateX(-40px) scale(0.75);
+            transform: translateX(-40px) scale(0.75);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeLeft {
+  from {
+    -webkit-transform: translateX(40px) scale(0.75);
+            transform: translateX(40px) scale(0.75);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    -webkit-transform: translateX(40px) scale(0.75);
+            transform: translateX(40px) scale(0.75);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=borrow.css.map */

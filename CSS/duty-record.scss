@@ -1,0 +1,194 @@
+@import "./import.scss";
+
+.table-con {
+  width: 472px;
+  height: 624px;
+
+  .table-top {
+    justify-content: flex-end;
+
+    .right-con {
+      display: flex;
+      flex-direction: row;
+
+      font-family: $fontFamily;
+      font-size: $fontNormal;
+      color: $white;
+
+      .ganti-con {
+        margin-right: $px2;
+
+        display: flex;
+        flex-direction: row;
+      }
+
+      .sort-con {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .table-row {
+    grid-template-columns: $px10 $px13 $px7 $px7 auto $px8;
+  }
+}
+
+.sort-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  .sort-form {
+    position: absolute;
+    padding: $px4 $px5;
+    top: 50%;
+    left: 50%;
+
+    @include flex(default, center, center);
+    width: 344px;
+    height: 228px;
+
+    background: $bgLColor;
+
+    transform: translate(-50%, -50%);
+
+    .overlay-close {
+      position: absolute;
+      top: $px2;
+      right: $px2;
+
+      width: 24px;
+      height: 24px;
+
+      button {
+        border: none;
+        background: transparent;
+
+        pointer-events: all;
+        cursor: pointer;
+      }
+    }
+
+    .input-con {
+      width: 100%;
+      height: 100%;
+
+      font-family: $fontFamily;
+      font-size: $fontLarge;
+      color: $white;
+
+      .sort-con {
+        width: 264px;
+        height: 114px;
+
+        display: grid;
+        grid-template-rows: $px4 $px10;
+
+        .sort-content-con {
+          height: 100%;
+
+          display: grid;
+          grid-template-columns: $px15 $px15;
+          grid-column-gap: $px3;
+
+          .sort-left,
+          .sort-right {
+            height: 100%;
+
+            display: grid;
+            grid-template-rows: auto auto;
+
+            .checkbox {
+              position: relative;
+              padding: 0 8px;
+
+              @include flex(row, center, center);
+              width: 120px;
+              height: 100%;
+
+              font-family: $fontFamily;
+              font-size: $fontSmall;
+              color: $white;
+              background-color: $checkboxColor;
+              border: 1px solid $priDark;
+
+              cursor: pointer;
+              user-select: none;
+
+              input {
+                position: absolute;
+                opacity: 0;
+
+                height: 0;
+                width: 0;
+
+                cursor: pointer;
+              }
+            }
+
+            div {
+              &:first-child {
+                label {
+                  border-radius: $px1 $px1 0 0;
+                }
+              }
+
+              &:last-child {
+                label {
+                  border-top: none;
+                  border-radius: 0 0 $px1 $px1;
+                }
+              }
+
+              .disabled {
+                opacity: 0.5;
+                transition: 0.1s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    button[type="submit"] {
+      position: absolute;
+      bottom: $px3;
+      right: $px5;
+
+      width: 120px;
+      height: 40px;
+      font-size: $fontNormal;
+      color: $white;
+      border: none;
+      border-radius: $px1;
+      background: $priColor2;
+
+      pointer-events: all;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $priColor1;
+      }
+    }
+  }
+}
+
+.overlay {
+  display: block;
+  animation: scaleup 0.25s forwards ease-in-out;
+}
+
+@keyframes scaleup {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

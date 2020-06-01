@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+main .nav .nav-con .nav-links-con li:last-child .active-link::after {
+  left: 30%;
+}
+
+#four-card-con {
+  margin: auto;
+  width: 1176px;
+  height: 280px;
+}
+
+#four-card-con .card-grp {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 240px 240px 240px 240px;
+      grid-template-columns: 240px 240px 240px 240px;
+  grid-column-gap: 72px;
+}
+
+#four-card-con .card-grp a:nth-child(2) .card {
+  border-top: 2px solid #018786;
+}
+
+#four-card-con .card-grp a:nth-child(2) .card:hover {
+  border-top: 2px solid #03dac5;
+}
+
+#four-card-con .card-grp a:nth-child(3) .card {
+  border-top: 2px solid #018786;
+}
+
+#four-card-con .card-grp a:nth-child(3) .card:hover {
+  border-top: 2px solid #03dac5;
+}
+
+#four-card-con .card-grp a:last-child .card {
+  border-top: 2px solid #cf6679;
+}
+
+#four-card-con .card-grp a:last-child .card:hover {
+  border-top: 2px solid #ff7597;
+}
+
+#four-card-con .card-grp .card {
+  margin: 0;
+  width: 100%;
+}
+
+#four-card-con .card-grp .card img:first-child {
+  width: 64px;
+  height: 64px;
+}
+
+#four-card-con .card-grp .card .card-heading-con {
+  width: 85%;
+}
+
+#four-card-con .card-grp .card .card-heading-con .card-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+/*# sourceMappingURL=discipline.css.map */
