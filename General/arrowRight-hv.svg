@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #cfd0d6;
+      }
+    </style>
+  </defs>
+  <title>arrowRight</title>
+  <path class="cls-1" d="M0,0H24V24H0Z" transform="translate(0 0)"/>
+  <path class="cls-2" d="M16,11H4v2H16v3l4-4L16,8Z" transform="translate(0 0)"/>
+</svg>
