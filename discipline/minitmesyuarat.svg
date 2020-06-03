@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #55586b;
+      }
+    </style>
+  </defs>
+  <title>minitmesyuarat</title>
+  <path class="cls-1" d="M0,0H24V24H0Z"/>
+  <path class="cls-2" d="M20,2H12A10.117,10.117,0,0,0,2,12.28,9.909,9.909,0,0,0,11.72,22,10.086,10.086,0,0,0,22,12V4A2.006,2.006,0,0,0,20,2ZM17,15l-3-2v2H7V9h7v2l3-2Z"/>
+</svg>
