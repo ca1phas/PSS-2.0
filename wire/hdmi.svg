@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #55586b;
+      }
+    </style>
+  </defs>
+  <title>hdmi</title>
+  <path class="cls-1" d="M0,0H24V24H0Z"/>
+  <path class="cls-2" d="M18,7V4a2.006,2.006,0,0,0-2-2H8A2.006,2.006,0,0,0,6,4V7H5v6l3,6v3h8V19l3-6V7ZM8,4h8V7H14V5H13V7H11V5H10V7H8Z"/>
+</svg>

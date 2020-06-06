@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #55586b;
+      }
+    </style>
+  </defs>
+  <title>mixer</title>
+  <path class="cls-1" d="M0,0H24V24H0Z"/>
+  <path class="cls-2" d="M17,21h2V15H17ZM5,21H7V11H5ZM21,11H19V3H17v8H15v2h6ZM9,17h2v4h2V17h2V15H9ZM13,3H11V13h2ZM9,9V7H7V3H5V7H3V9Z"/>
+</svg>

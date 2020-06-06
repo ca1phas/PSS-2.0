@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #55586b;
+      }
+    </style>
+  </defs>
+  <title>radio-power-wire</title>
+  <path class="cls-1" d="M0,0H24V24H0Z"/>
+  <path class="cls-2" d="M16.01,7,16,4a1,1,0,0,0-2,0V7H10V4A1,1,0,0,0,8,4V7H7.99A2,2,0,0,0,6,8.99v4.66a2,2,0,0,0,.58,1.41L9.5,18v2a1,1,0,0,0,1,1h3a1,1,0,0,0,1-1V18l2.92-2.92A2.039,2.039,0,0,0,18,13.66V8.99A1.989,1.989,0,0,0,16.01,7Z"/>
+</svg>

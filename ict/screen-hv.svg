@@ -1,0 +1,14 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512.001" viewBox="0 0 512 512.001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #03dac5;
+      }
+    </style>
+  </defs>
+  <title>screen-hv</title>
+  <path class="cls-1" d="M301,225.7h30V309H301Z"/>
+  <path class="cls-1" d="M181,179h30V309H181Z"/>
+  <path class="cls-1" d="M31,90V374a35.04,35.04,0,0,0,35,35H177.333L87.274,485.572a15,15,0,0,0,19.433,22.855L223.646,409h60.84l120.992,99.582a15,15,0,1,0,19.065-23.163L331.694,409H446a35.04,35.04,0,0,0,35-35V90Z"/>
+  <path class="cls-1" d="M492,0H20A20,20,0,0,0,0,20V40A20,20,0,0,0,20,60H492a20,20,0,0,0,20-20V20A20,20,0,0,0,492,0Z"/>
+</svg>

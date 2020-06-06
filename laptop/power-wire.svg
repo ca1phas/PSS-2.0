@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #55586b;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>power-wire</title>
+  <path class="cls-1" d="M16.01,7,16,3H14V7H10V3H8V7H7.99A2.132,2.132,0,0,0,6,8.99v5.49L9.5,18v3h5V18L18,14.49V8.99A2.132,2.132,0,0,0,16.01,7Z"/>
+  <rect class="cls-1" x="11.063" y="3" width="1.875" height="4"/>
+  <path class="cls-2" d="M0,0H24V24H0Z"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #55586b;
+      }
+    </style>
+  </defs>
+  <title>chair</title>
+  <rect class="cls-1" width="24" height="24"/>
+  <path class="cls-2" d="M4,18v3H7V18H17v3h3V15H4Zm15-8h3v3H19ZM2,10H5v3H2Zm15,3H7V5A2,2,0,0,1,9,3h6a2,2,0,0,1,2,2Z"/>
+</svg>

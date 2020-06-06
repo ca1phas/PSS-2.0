@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #55586b;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>scanner</title>
+  <path class="cls-1" d="M19.8,10.7,4.2,5,3.5,6.9,17.6,12H5a2.006,2.006,0,0,0-2,2v4a2.006,2.006,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V12.5A1.874,1.874,0,0,0,19.8,10.7ZM7,17H5V15H7Zm12,0H9V15H19Z"/>
+  <path class="cls-2" d="M0,0H24V24H0Z"/>
+</svg>

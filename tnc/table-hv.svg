@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="496.002" height="279" viewBox="0 0 496.002 279">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #03dac5;
+      }
+    </style>
+  </defs>
+  <title>table-hv</title>
+  <path class="cls-1" d="M496,39V8a8,8,0,0,0-8-8H8A8,8,0,0,0,0,8V39a8,8,0,0,0,8,8H61.49L.29,268.87a8,8,0,0,0,5.56,9.84A8.181,8.181,0,0,0,8,279H32a8,8,0,0,0,7.64-5.63L109.89,47H386.11l70.25,226.37A8,8,0,0,0,464,279h24a8,8,0,0,0,8-8,7.85,7.85,0,0,0-.29-2.15L434.51,47H488A8,8,0,0,0,496,39Z" transform="translate(0.002)"/>
+</svg>

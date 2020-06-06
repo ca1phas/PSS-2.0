@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #55586b;
+      }
+    </style>
+  </defs>
+  <title>receiver-power-wire</title>
+  <path class="cls-1" d="M0,0H24V24H0Z"/>
+  <path class="cls-2" d="M2,12A10,10,0,1,1,12,22,10,10,0,0,1,2,12Zm10,6a6,6,0,1,0-6-6A6,6,0,0,0,12,18Z"/>
+</svg>
